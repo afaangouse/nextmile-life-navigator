@@ -1,6 +1,6 @@
-# Nextmile Life Navigator
+# NEXTMILE — Life Navigator
 
-NEXTMILE — YOUR AI LIFE OPERATING SYSTEM
+A calmer way to make progress on the things that matter.
 
 Complete Product Vision, Design, Intelligence & Development Specification
 
@@ -1046,7 +1046,7 @@ Server-side validation of all AI-proposed actions.
 
 Deployment:
 
-Lovable-supported deployment or another suitable production hosting platform.
+A production hosting platform with a secure environment for server-side secrets.
 
 Environment variables for secrets.
 
@@ -1289,16 +1289,6 @@ Do not fake backend functionality. Clearly identify features that still need int
 Once the foundation is complete, proceed to authentication and persistent database functionality, then the actual AI intelligence engine.
 
 Build NEXTMILE as one coherent product, not a collection of disconnected pages.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/c848b4c8-6b3b-5f9b-8289-26be578fa9ca).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
