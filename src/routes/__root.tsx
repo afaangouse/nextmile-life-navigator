@@ -150,7 +150,7 @@ function RootComponent() {
           </div>
         )}
       </AppShell>
-      <Toaster theme="dark" position="top-center" />
+      <Toaster theme="light" position="top-center" />
     </QueryClientProvider>
   );
 }

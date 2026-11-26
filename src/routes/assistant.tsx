@@ -11,7 +11,7 @@ import { app, useApp } from "@/lib/nextmile/store";
 
 export const Route = createFileRoute("/assistant")({
   head: pageHead(
-    "AI Assistant",
+    "Ask NEXTMILE",
     "Ask what to focus on, whether you're overloaded or how to recover a bad week, answered from your own goals and schedule.",
   ),
   component: Assistant,
@@ -46,8 +46,8 @@ function Assistant() {
 
   return (
     <Page
-      eyebrow="Strategic, calm, grounded in your data"
-      title="AI Assistant"
+      eyebrow="Help with your goals and schedule"
+      title="Ask NEXTMILE"
       actions={
         s.chat.length ? (
           <Button variant="ghost" size="sm" onClick={() => app.clearChat()}>
@@ -59,10 +59,8 @@ function Assistant() {
     >
       <div className="mx-auto max-w-3xl">
         <p className="mb-5 rounded-xl border border-border bg-secondary/40 px-4 py-3 text-xs text-muted-foreground">
-          <span className="font-medium text-foreground">Current stage:</span> answers come from
-          NEXTMILE's planning engine reading your goals, tasks and schedule. Open-ended conversation
-          arrives when the language model is connected, so for now I handle the questions below and
-          say so when I can't answer.
+          Answers are based on your goals, tasks and schedule. For now, NEXTMILE can help with
+          common planning questions; broader AI conversation isn't connected yet.
         </p>
 
         <div className="space-y-5">

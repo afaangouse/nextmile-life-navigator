@@ -205,7 +205,7 @@ function Settings() {
               </Field>
             </div>
             <p className="text-xs text-muted-foreground">
-              The briefing on the Overview updates whenever you open NEXTMILE. Reminders that reach
+              The briefing on Home updates whenever you open NEXTMILE. Reminders that reach
               you while it is closed need the accounts stage first, so none are sent today.
             </p>
             <Button type="submit" variant="hero">

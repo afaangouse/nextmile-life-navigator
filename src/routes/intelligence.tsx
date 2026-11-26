@@ -24,7 +24,7 @@ import type { Task } from "@/lib/nextmile/types";
 
 export const Route = createFileRoute("/intelligence")({
   head: pageHead(
-    "AI Intelligence",
+    "Recommendations",
     "See how NEXTMILE reads your situation: conflicts, proposals awaiting approval, missed-task recovery and what it may do on its own.",
   ),
   component: Intelligence,
@@ -66,8 +66,8 @@ function Intelligence() {
 
   return (
     <Page
-      eyebrow="Observe → understand → analyse → plan → approve → execute → learn"
-      title="AI Intelligence"
+      eyebrow="Suggestions and changes to your plan"
+      title="Recommendations"
       actions={
         <>
           <Pill tone={status.tone} className="px-3 py-1.5 text-xs">

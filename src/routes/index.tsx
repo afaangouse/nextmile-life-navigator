@@ -44,13 +44,13 @@ import { CATEGORY_LABEL, type Goal, type Task } from "@/lib/nextmile/types";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Overview — NEXTMILE" },
+      { title: "Home — NEXTMILE" },
       {
         name: "description",
         content:
           "Your command centre: today's priorities, schedule, goals and what NEXTMILE recommends next.",
       },
-      { property: "og:title", content: "Overview — NEXTMILE" },
+      { property: "og:title", content: "Home — NEXTMILE" },
       {
         property: "og:description",
         content:
@@ -252,7 +252,7 @@ function Overview() {
 
         <div className="space-y-5">
           <Panel
-            eyebrow="Intelligence"
+            eyebrow="Recommendations"
             title="What I'm seeing"
             action={
               <Button size="sm" variant="ghost" asChild>

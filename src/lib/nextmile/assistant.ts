@@ -73,7 +73,7 @@ export function respond(s: AppState, input: string, now: Date): { text: string; 
     const why = [...reasons].sort((a, b) => b[1] - a[1])[0];
     return {
       plan: false,
-      text: `${misses.length} items were missed in the last two weeks. Most of them are “${top[0]}” (${top[1]} times).${why ? ` The reason you gave most often was ${why[0].replace("_", " ")}.` : " I don't yet know why; I only know what you tell me."} When the same thing slips repeatedly, the schedule is usually the problem, not the person. Open a missed item in the Intelligence centre and I'll redesign it.`,
+      text: `${misses.length} items were missed in the last two weeks. Most of them are “${top[0]}” (${top[1]} times).${why ? ` The reason you gave most often was ${why[0].replace("_", " ")}.` : " I don't yet know why; I only know what you tell me."} When the same thing slips repeatedly, the schedule is usually the problem, not the person. Open a missed item in Recommendations and I'll redesign it.`,
     };
   }
   if (has("progress", "goals")) {
@@ -95,7 +95,7 @@ export function respond(s: AppState, input: string, now: Date): { text: string; 
     const un = unresolvedMisses(s, today);
     return {
       plan: false,
-      text: `${weeklyReview(s, now).join(" ")} ${un.length ? `${un.length} missed ${un.length === 1 ? "item still needs" : "items still need"} a quick conversation in the Intelligence centre so I can plan around the real cause.` : "Nothing is waiting on you."} There is no backlog to pay off. We restart from today.`,
+      text: `${weeklyReview(s, now).join(" ")} ${un.length ? `${un.length} missed ${un.length === 1 ? "item still needs" : "items still need"} a quick conversation in Recommendations so I can plan around the real cause.` : "Nothing is waiting on you."} There is no backlog to pay off. We restart from today.`,
     };
   }
   if (has("allocate", "how much time")) {

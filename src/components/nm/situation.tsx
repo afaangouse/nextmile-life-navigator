@@ -21,7 +21,7 @@ export function Situation({
   const done = (id: string | null) =>
     id
       ? toast.success("I've prepared a proposal for today.", {
-          description: "Review it in the Intelligence centre.",
+          description: "Review it in Recommendations.",
         })
       : toast("Today's plan still fits. No changes needed.");
   return (
